@@ -8,7 +8,7 @@ Landing page institucional para academia fictícia, desenvolvida como projeto de
 
 ## 📸 Preview
 
-<!-- adicione um screenshot aqui -->
+![Preview](./preview.png)
 
 ## 🚀 Tecnologias
 
