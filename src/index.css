@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-redFit: #B4121B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* input {
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid hsl(0, 0%, 0%, 0.16)
+}
+
+input:focus {
+    border: 1px solid black
+} */
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    gap: 10px;
+    background-color: background;
+    padding: 20px 0;   
+}
+.card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    background: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 1
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    gap: 5px;
+    animation: scroll-to-left 10s linear infinite;
+}
+
+.carousel-track2 {
+    display: flex;
+    width: max-content;
+    gap: 5px;
+    animation: scroll-to-right 10s linear infinite;
+}
+
+.carousel-container:hover .carousel-track {
+    animation-play-state: paused;
+}
+.carousel-container:hover .carousel-track2 {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-to-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
+
+@keyframes scroll-to-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
