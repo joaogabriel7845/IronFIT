@@ -11,8 +11,8 @@ function HeroSection() {
 
                 <div className="relative flex flex-col gap-2 justify-center items-center h-full">
 
-                    <h1 className="text-6xl text-white text-center font-['Bebas_Neue'] px-4">Transforme seu corpo</h1>
-                    <p className="text-3xl text-white text-center font-['Google_Sans'] px-4">Treine com quem leva sua evolução a sério.</p>
+                    <h1 className="text-5xl md:text-6xl text-white text-center font-['Bebas_Neue'] px-4">Transforme seu corpo</h1>
+                    <p className="text-xl md:text-3xl text-white text-center font-['Google_Sans'] px-4">Treine com quem leva sua evolução a sério.</p>
                     
                 </div>
 

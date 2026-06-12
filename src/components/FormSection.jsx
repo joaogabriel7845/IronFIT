@@ -27,7 +27,7 @@ function FormSection() {
     const msg = `Olá meu nome é ${nome} | Telefone: ${telefone} | Objetivo: ${objetivo}`;
     
     return (
-        <div className="flex flex-col md:flex-row gap-5 p-5">
+        <div className="flex flex-col md:flex-row gap-5 p-10">
 
             <div className="flex flex-col p-5 border border-black/30 shadow-md gap-5 flex-1">
 
@@ -113,6 +113,8 @@ function FormSection() {
                             </tbody>
                         </table>
                     </div>
+
+                    <p className="text-xl font-['Google_Sans'] text-center">Venha participar da <span className="text-3xl font-['Bebas_Neue']">Iron<span className="text-redFit">Fit !</span></span></p>
 
                 </div>
             </div>
