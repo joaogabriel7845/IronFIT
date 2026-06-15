@@ -5,7 +5,7 @@ function StatsSection() {
     const status = [
         {numero: 2000, descricao: "Alunos ativos"},
         {numero: 8, descricao: "Anos no mercado"},
-        {numero: 6, descricao: "Modalidades"},
+        {numero: 4, descricao: "Modalidades"},
         {numero: 4.9, descricao: "Avaliação"}
     ]
 
