@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 function StatsSection() {
     const status = [
         {numero: 2000, descricao: "Alunos ativos"},
-        {numero: 8, descricao: "Anos no mercado"},
+        {numero: 10, descricao: "Anos no mercado"},
         {numero: 4, descricao: "Modalidades"},
         {numero: 4.9, descricao: "Avaliação"}
     ]
