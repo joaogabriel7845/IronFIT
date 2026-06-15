@@ -38,7 +38,7 @@ return (
             {faqs.map((f) => (
                 <div key={f.pergunta} onClick={() => setAberta(f.pergunta === aberta ? null : f.pergunta)} className="flex flex-col gap-2 border-b font-['Google_Sans'] hover:cursor-pointer border-black/10 p-5" >
 
-                    <h1 className="flex justify-between text-2xl hover:cursor-pointer">
+                    <h1 className="flex justify-between text-xl md:text-2xl hover:cursor-pointer">
                         {f.pergunta}
                         <FontAwesomeIcon className={`transition-all ease duration-350 ${aberta === f.pergunta ? "rotate-180" : ""}`} color={aberta === f.pergunta ? "#B4121B" : ""} icon={faAngleUp}/>
                     </h1>

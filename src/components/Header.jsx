@@ -25,6 +25,8 @@ function Header() {
                 transition={{duration: 0.3}}
                 className="fixed top-0 left-0 h-screen w-64 bg-black font-[Inter] z-100 flex flex-col p-10 gap-5 md:hidden"
             >
+                <h1 className="text-3xl font-['Bebas_Neue'] p-2 text-center border-b border-white/50 text-white">Iron<span className="text-redFit">Fit</span></h1>
+
                 <button onClick={() => setMenuAberto(false)} className="self-end">
                     <FontAwesomeIcon color="white" icon={faXmark}/>
                 </button>
@@ -41,15 +43,15 @@ function Header() {
                     <NavItem label={"Sobre"}/>
                 </a>
                 
-                <a onClick={() => setMenuAberto(false)} href="#testimonial">
+                <a onClick={() => setMenuAberto(false)} href="#planos">
                     <NavItem label={"Planos"}/>
                 </a>
 
-                <a onClick={() => setMenuAberto(false)} href="#contact">
+                <a onClick={() => setMenuAberto(false)} href="#testimonial">
                     <NavItem label={"Depoimentos"}/>
                 </a>
                 
-                <a onClick={() => setMenuAberto(false)} href="#contact">
+                <a onClick={() => setMenuAberto(false)} href="#form">
                     <NavItem label={"Contato"}/>
                 </a>
 
