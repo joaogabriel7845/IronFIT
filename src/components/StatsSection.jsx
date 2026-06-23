@@ -14,8 +14,11 @@ function StatsSection() {
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-            if(entry.isIntersecting) setIniciou(true)
-        }, { threshold: 0.5 })
+            if(entry.isIntersecting) {
+                setIniciou(true)
+                observer.disconnect()
+            }
+        }, { threshold: 0.2 })
         observer.observe(ref.current)
         return (() => observer.disconnect())
     }, [])
