@@ -53,7 +53,7 @@ function SubscriptionSection() {
 
   return (
     <div id="planos" className="w-full scroll-mt-30 flex flex-col gap-4 pb-5 md:px-10">
-      <h1 className="text-5xl text-center px-5 font-['Bebas_Neue']">Planos</h1>
+      <h1 className="text-5xl text-center px-5 pt-5 font-['Bebas_Neue']">Planos</h1>
       <div className="flex flex-col md:flex-row p-5 justify-center gap-5">
         {planos.map((p) => (
           <div
