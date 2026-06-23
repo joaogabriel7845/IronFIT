@@ -4,7 +4,7 @@ Landing page institucional para academia fictícia, desenvolvida como projeto de
 
 ## 🔗 Demo
 
-[Ver projeto ao vivo](https://github.com/joaogabriel7845/IronFIT) <!-- substitua pelo link do Vercel -->
+[Ver projeto ao vivo](https://iron-fit-umber.vercel.app/)
 
 ## 📸 Preview
 
