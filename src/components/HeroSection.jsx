@@ -1,11 +1,30 @@
 import { motion } from "motion/react";
 import videoFit from "../assets/videos/ironFitVideo.mp4"
+import { useEffect, useRef } from "react";
 
 function HeroSection() {
+
+    const videoRef = useRef(null)
+
+    useEffect(() => {
+        const video = videoRef.current
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                video.play()
+            } else {
+                video.pause()
+            }
+        }, { threshold: 0.2 })
+
+        observer.observe(video)
+        return () => observer.disconnect()
+    }, [])
+
+
     return (
         <div id="home" className="w-full h-full overflow-hidden scroll-mt-30 bg-black">
             <div className="relative h-screen">
-                <video preload="none" autoPlay muted loop className="w-full h-full opacity-75 object-cover absolute inset-0">
+                <video ref={videoRef} preload="none" muted loop className="w-full h-full opacity-75 object-cover absolute inset-0">
                     <source src={videoFit} type="video/mp4" />
                 </video>
 
